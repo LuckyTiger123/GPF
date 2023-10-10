@@ -60,16 +60,16 @@ usage: prompt_tuning_full_shot.py [-h] [--device DEVICE]
 optional arguments:
 --device        		Which gpu to use if any (default: 0)
 --epochs        		Number of epochs to train (default: 50)
---lr               	Learning rate (default: 0.0001)
+--lr                            Learning rate (default: 0.0001)
 --decay         		Weight decay (default: 0)
---num_layer					Number of GNN message passing layers (default: 5).
+--num_layer			Number of GNN message passing layers (default: 5).
 --emb_dim     			Embedding dimensions (default: 300)
 --dropout_ratio 		Dropout ratio (default: 0.5)
---model_file			  File path to read the model (if there is any)
---tuning_type				'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
+--model_file			File path to read the model (if there is any)
+--tuning_type		        'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
 --seed	         		Seed for splitting dataset.
---runseed		  			Seed for running experiments.
---num_layers				A range of [1,2,3]-layer MLPs with equal width
+--runseed		  	Seed for running experiments.
+--num_layers			A range of [1,2,3]-layer MLPs with equal width
 --pnum	         		The number of independent basis for GPF-plus
 ```
 
@@ -90,18 +90,18 @@ usage: prompt_tuning_few_shot.py [-h] [--device DEVICE]
 optional arguments:
 --device       			Which gpu to use if any (default: 0)
 --epochs       			Number of epochs to train (default: 50)
---lr               	Learning rate (default: 0.001)
+--lr               	        Learning rate (default: 0.001)
 --decay         		Weight decay (default: 0)
---num_layer					Number of GNN message passing layers (default: 5).
---emb_dim	  				Embedding dimensions (default: 300)
+--num_layer			Number of GNN message passing layers (default: 5).
+--emb_dim	  		Embedding dimensions (default: 300)
 --dropout_ratio			Dropout ratio (default: 0.5)
---model_file 				File path to read the model (if there is any)
---tuning_type				'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
+--model_file 			File path to read the model (if there is any)
+--tuning_type			'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
 --seed         			Seed for splitting dataset.
---runseed	  				Seed for running experiments.
---num_layers				A range of [1,2,3]-layer MLPs with equal width
+--runseed	  		Seed for running experiments.
+--num_layers			A range of [1,2,3]-layer MLPs with equal width
 --pnum         			The number of independent basis for GPF-plus
---shot_number				Number of shots
+--shot_number			Number of shots
 ```
 
 ### Chemistry dataset
@@ -124,20 +124,20 @@ usage: prompt_tuning_full_shot.py [-h] [--device DEVICE]
 optional arguments:
 --device        		Which gpu to use if any (default: 0)
 --epochs        		Number of epochs to train (default: 100)
---lr               	Learning rate (default: 0.001)
+--lr               	        Learning rate (default: 0.001)
 --lr_scale    			Relative learning rate for the feature extraction layer (default: 1)
 --decay          		Weight decay (default: 0)
---num_layer 				Number of GNN message passing layers (default: 5).
+--num_layer 			Number of GNN message passing layers (default: 5).
 --emb_dim      			Embedding dimensions (default: 300)
 --dropout_ratio  		Dropout ratio (default: 0.5)
 --tuning_type 			'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
 --dataset      			Root directory of dataset. For now, only classification.
---model_file 				File path to read the model (if there is any)
---seed            	Seed for splitting the dataset.
+--model_file 			File path to read the model (if there is any)
+--seed            	        Seed for splitting the dataset.
 --runseed      			Seed for minibatch selection, random initialization.
 --split          		The way of dataset split(e.g., 'scaffold' for chem data)
---num_layers 			  A range of [1,2,3]-layer MLPs with equal width
---pnum            	The number of independent basis for GPF-plus
+--num_layers 			A range of [1,2,3]-layer MLPs with equal width
+--pnum            	        The number of independent basis for GPF-plus
 ```
 
 For the few-show scenarios:
@@ -157,20 +157,20 @@ usage: prompt_tuning_few_shot.py [-h] [--device DEVICE]
 optional arguments:
 --device        		Which gpu to use if any (default: 0)
 --epochs        		Number of epochs to train (default: 100)
---lr                Learning rate (default: 0.001)
+--lr                            Learning rate (default: 0.001)
 --lr_scale    			Relative learning rate for the feature extraction layer (default: 1)
 --decay          		Weight decay (default: 0)
---num_layer  				Number of GNN message passing layers (default: 5).
+--num_layer  			Number of GNN message passing layers (default: 5).
 --emb_dim      			Embedding dimensions (default: 300)
 --dropout_ratio 		Dropout ratio (default: 0.5)
 --tuning_type 			'gpf' for GPF and 'gpf-plus' for GPF-plus in the paper
 --dataset      			Root directory of dataset. For now, only classification.
 --model_file    		File path to read the model (if there is any)
---seed            	Seed for splitting the dataset.
+--seed            	        Seed for splitting the dataset.
 --runseed      			Seed for minibatch selection, random initialization.
 --split          		The way of dataset split(e.g., 'scaffold' for chem data)
---num_layers 				A range of [1,2,3]-layer MLPs with equal width
---pnum            	The number of independent basis for GPF-plus
+--num_layers 			A range of [1,2,3]-layer MLPs with equal width
+--pnum            	        The number of independent basis for GPF-plus
 --shot_number 			Number of shots
 ```
 
