@@ -195,7 +195,7 @@ sh run_few_shot.sh
 You can cite our paper by following bibtex.
 
 ```tex
-@inproceedings{Fang2022UniversalPT,
+@inproceedings{Fang2023UniversalPT,
   title={Universal Prompt Tuning for Graph Neural Networks},
   author={Taoran Fang and Yunchao Zhang and Yang Yang and Chunping Wang and Lei Chen},
   booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
