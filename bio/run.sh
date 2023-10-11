@@ -44,8 +44,8 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 ### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --lr 1e-4 --dropout_ratio 0 --epochs 100 --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --lr 1e-4 --dropout_ratio 0 --tuning_type gpf
 
 ### GPF-plus
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --lr 1e-4 --dropout_ratio 0 --epochs 100 --tuning_type gpf-plus --num_layers 2 --pnum 5
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --lr 1e-4 --dropout_ratio 0 --tuning_type gpf-plus --num_layers 2 --pnum 5
