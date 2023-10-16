@@ -48,7 +48,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset bbbp --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset bbbp --tuning_type gpf --num_layers 3
 
 #### GPF-plus
 
@@ -102,7 +102,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset tox21 --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset tox21 --tuning_type gpf --num_layers 4
 
 #### GPF-plus
 
@@ -156,7 +156,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset toxcast --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset toxcast --tuning_type gpf --num_layers 2
 
 #### GPF-plus
 
@@ -210,8 +210,8 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset sider --tuning_type gpf
-
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset sider --tuning_type gpf --num_layers 3
+ 
 #### GPF-plus
 
 python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset sider --tuning_type gpf-plus --num_layers 3 --pnum 20
@@ -265,7 +265,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset clintox --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset clintox --tuning_type gpf --num_layers 3
 
 #### GPF-plus
 
@@ -319,7 +319,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset muv --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset muv --tuning_type gpf --num_layers 1
 
 #### GPF-plus
 
@@ -373,7 +373,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset hiv --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset hiv --tuning_type gpf --num_layers 4
 
 #### GPF-plus
 
@@ -428,7 +428,7 @@ python prompt_tuning_full_shot.py --input_model_file pretrained_models/contextpr
 
 #### GPF
 
-python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset bace --tuning_type gpf
+python prompt_tuning_full_shot.py --input_model_file pretrained_models/gcl.pth --dataset bace --tuning_type gpf --num_layers 4
 
 #### GPF-plus
 
